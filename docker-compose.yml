@@ -1,0 +1,20 @@
+version: '3.8'
+services:
+  mike-db:
+    image: postgres
+    ports:
+        - 5434:5432
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: nest
+  test-db:
+    image: postgres
+    ports:
+        - 5435:5432
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: nest
+
+
